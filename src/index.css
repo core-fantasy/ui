@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.title {
+  color: black;
+  font-size: large;
+  text-align: center;
+}
+
+.slogan {
+  color: red;
+  font-size: small;
+  text-align: center;
+}
+
+.copyright {
+  bottom: 0;
+  color: black;
+  font-size: x-small;
+  font-style: italic;
+  position: absolute;
+  text-align: center;
+}
