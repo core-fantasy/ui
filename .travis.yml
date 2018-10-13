@@ -6,8 +6,8 @@ node_js:
 services:
   - docker
 
-before_install:
-- npm install -g npm@latest
+#before_install:
+#- npm install -g npm@latest
 
 script:
   - npm build run
