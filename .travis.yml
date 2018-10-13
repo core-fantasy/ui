@@ -6,8 +6,10 @@ node_js:
 services:
   - docker
 
-#before_install:
-#- npm install -g npm@latest
+before_install:
+  - npm install -g npm@latest
+  - npm cache verify
+  - npm cache --force clean
 
 script:
   - npm build run
