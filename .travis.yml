@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+  - 8
+
+services:
+  - docker
+
+before_install:
+  - npm cache verify
+
+script:
+  - npm build run
+  - docker build . -t ui
+  - docker tag ui corefantasy/ui
+
+deploy:
+  provider: script
+  script: bash dockerPush.sh
+  on:
+    branch: master
+
+after_failure:
+  - cat `ls -t1 /home/travis/.npm/_logs/*debug.log | head -1`
