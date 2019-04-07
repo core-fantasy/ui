@@ -3,7 +3,7 @@ import React from "react";
 class Copyright extends React.Component {
     render() {
         return (
-            <div class="copyright">Copyright 2018 Michael Albers</div>
+            <div className="copyright">Copyright 2019 Michael Albers</div>
         );
     }
 }

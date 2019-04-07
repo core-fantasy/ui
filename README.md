@@ -23,12 +23,14 @@ website, or via the `travis` CLI tool.
 ## Reference
 * https://docs.travis-ci.com/user/docker/
 
+### Google Sign In
+* [Web Sign In Help](https://developers.google.com/identity/sign-in/web/)
+* [Credentials Manager](https://console.developers.google.com/apis/credentials)
+
 ## Dependencies
 * [yarn](https://yarnpkg.com)
 * [Node.js](https://nodejs.org/) (using 8.12.0)
 * [ReactJs](https://reactjs.org)
   * yarn create react-app
-* [React Router](https://reacttraining.com/react-router)
-  * yarn add react-router-dom
 
 [2]:https://travis-ci.org
