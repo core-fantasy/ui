@@ -4,7 +4,7 @@
 User Interface Code
 
 ## Build
-To build the code: `yarn build`.
+To build the code: `yarn build`
 
 To build the Docker image: `docker build . -t ui`
 
