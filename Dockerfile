@@ -1,5 +1,10 @@
-FROM corefantasy/httpd
+FROM httpd:2.4
 
-RUN rm -rf /usr/local/apache2/htdocs/*  # Clean out junk from base image
+# For debugging help
+RUN apt-get update && apt-get install -y less
+
+COPY config/httpd.conf /usr/local/apache2/conf/httpd.conf
 
 COPY build/ /usr/local/apache2/htdocs/
+
+EXPOSE 80
