@@ -1,18 +1,26 @@
+/*
+Colors from https://teamcolorcodes.com
+Carolina Blue
+Broncos Orange
+Packers Green
+*/
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #0085CA;
 }
 
 .title {
-  color: black;
-  font-size: large;
+  color: #203731;
+  font-size: 5vw;
   text-align: center;
 }
 
 .slogan {
-  color: red;
-  font-size: small;
+  color: #FB4F14;
+  font-size: 1vw;
   text-align: center;
 }
 
