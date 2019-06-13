@@ -31,6 +31,8 @@ website, or via the `travis` CLI tool.
 * [yarn](https://yarnpkg.com)
 * [Node.js](https://nodejs.org/) (using 8.12.0)
 * [ReactJs](https://reactjs.org)
-  * yarn create react-app
+* [ReduxJs](https://redux.js.org)
+* [ReactReduxJs](https://react-redux.js.org/)
+* See yarn.lock for remaining dependencies.
 
 [2]:https://travis-ci.org
