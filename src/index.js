@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from "react-router-dom";
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import App from './containers/App'
-import reducer from './reducers'
+import App from './components/App'
+import rootReducer from './reducers'
 
-const store = createStore(reducer)
+const store = createStore(rootReducer)
 
 ReactDOM.render(
     <Provider store={store}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { GoogleLogin } from 'react-google-login';
 import { GoogleLogout } from 'react-google-login';
 
-class LoginLogout extends React.Component {
+class GoogleLoginLogout extends React.Component {
     constructor(props) {
         super(props);
         this.state = {isLoggedIn: false};
@@ -75,4 +75,4 @@ class LoginLogout extends React.Component {
     }
 }
 
-export default LoginLogout;
+export default GoogleLoginLogout;

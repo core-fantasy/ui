@@ -7,7 +7,7 @@ const League = ({teams}) => (
             <span>Settings</span> <span>Commissioner</span> <span>Draft</span>
         </div>
         {teams.map(team =>
-            <TeamItem name={team.name} owner={team.owner} icon={team.icon}/>
+            <TeamItem key={team.name} name={team.name} owner={team.owner} icon={team.icon}/>
         )}
     </div>
 );

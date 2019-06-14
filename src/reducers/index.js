@@ -1,7 +1,6 @@
-function reducer(state, action) {
-  // For now, don't handle any actions
-  // and just return the state given to us.
-  return state
-}
+import { combineReducers } from 'redux'
+import isLoggedIn from "./isLoggedIn";
 
-export default reducer;
+export default combineReducers({
+  isLoggedIn
+})

@@ -5,7 +5,7 @@ const UserLeagueList = ({leagues}) => (
     <div>
         Leagues:<br/>
         {leagues.map(league =>
-            <UserLeagueItem leagueName={league.name} userTeamName={league.userTeamName}/>
+            <UserLeagueItem key={league.name} leagueName={league.name} userTeamName={league.userTeamName}/>
         )}
         <br/>
     </div>
