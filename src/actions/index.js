@@ -1,4 +1,5 @@
-export const setLoggedIn = loginState => ({
+export const setLoggedIn = (state, providerName) => ({
     type: "SET_LOGGED_IN",
-    loginState
+    state,
+    providerName
 });

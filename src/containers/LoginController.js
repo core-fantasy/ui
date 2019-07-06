@@ -1,20 +1,21 @@
 import { connect } from 'react-redux'
-import TestLoginLogout from "../components/TestLoginLogout";
 import {setLoggedIn} from "../actions";
+import CompositeLoginLogout from "../presentation/CompositeLoginLogout";
 
 
 const mapStateToProps = (state) => {
     return {
-        isLoggedIn: state.isLoggedIn
+        isLoggedIn: state.login.state,
+        loginProviderName: state.login.providerName
     };
 };
 
 const mapDispatchToProps = dispatch => ({
-    postLogin: () => dispatch(setLoggedIn(true)),
-    postLogout: () => dispatch(setLoggedIn(false))
+    postLogin: (loginProviderName) => dispatch(setLoggedIn(true, loginProviderName)),
+    postLogout: () => dispatch(setLoggedIn(false, ""))
 });
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(TestLoginLogout)
+)(CompositeLoginLogout)

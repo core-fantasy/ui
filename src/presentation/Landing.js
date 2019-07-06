@@ -1,4 +1,5 @@
 import React from 'react'
+import LoginController from "../containers/LoginController";
 import '../index.css';
 
 const Landing = () => (
@@ -7,7 +8,10 @@ const Landing = () => (
             Core Fantasy Football
         </div>
         <div className="slogan">
-            Enabling failure since 2018.
+            Enabling failure since 2019.
+        </div>
+        <div align="center">
+            <LoginController/>
         </div>
     </div>
 );

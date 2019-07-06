@@ -1,5 +1,5 @@
 import React from 'react';
-import Copyright from "./components/Copyright.js"
+import Copyright from "./presentation/Copyright.js"
 
 class NotFound extends React.Component {
     render() {
