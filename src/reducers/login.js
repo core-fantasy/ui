@@ -1,8 +1,10 @@
-const login = (state = {state: false, providerName: ""}, action) => {
+const login = (state = {state: false, providerName: "", loginCheckPerformedBy: ""}, action) => {
     if (action.type === "SET_LOGGED_IN") {
         return Object.assign({}, state, {
             state: action.state,
-            providerName: action.providerName});
+            providerName: action.providerName,
+            loginCheckPerformedBy: action.loginCheckPerformedBy
+        });
     }
     return state;
 };

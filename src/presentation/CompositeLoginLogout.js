@@ -18,6 +18,7 @@ const CompositeLoginLogout = ({isLoggedIn, loginProviderName, postLogin, postLog
         }
         else {
             // TODO: handle unknown value
+            widget = <div/>
         }
     }
     return(<div>{widget}</div>);

@@ -11,8 +11,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-    postLogin: (loginProviderName) => dispatch(setLoggedIn(true, loginProviderName)),
-    postLogout: () => dispatch(setLoggedIn(false, ""))
+    postLogin: (loginProviderName) => dispatch(setLoggedIn(true, loginProviderName, "")),
+    postLogout: () => dispatch(setLoggedIn(false, "", ""))
 });
 
 export default connect(

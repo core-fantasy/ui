@@ -1,6 +1,7 @@
 import React from 'react'
-import Landing from './Landing'
-import Copyright from "./Copyright";
+import { Route, Switch } from "react-router-dom";
+import LandingController from '../containers/LandingController';
+import NotFound from "../NotFound";
 //import UserLeagueList from "./UserLeageList";
 //import League from "./League";
 
@@ -22,11 +23,14 @@ let teams = [
 <UserLeagueList leagues={userLeagues}/>
 <League teams={teams}/>
 */
-const App = () => (
-    <div>
-        <Landing/>
-        <Copyright/>
-    </div>
-);
+const App = () => {
+
+    return (
+        <Switch>
+            <Route exact path="/" component={LandingController}/>
+            <Route component={NotFound} />
+        </Switch>
+    );
+};
 
 export default App

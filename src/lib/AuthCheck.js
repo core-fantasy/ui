@@ -1,11 +1,19 @@
-function authCheck() {
+function authCheck(loggedInCallback, notLoggedInCallback, loginCheckErrorCallback) {
 
-    fetch("/api/authorization/authorized", {
-        method: "GET",
-        credentials: "same-origin",
-    })
-        .then(response => { /* Load page. */})
-        .catch(/* Redirect to login */)
+    fetch("/api/authorization/v1/authorized",
+        {
+            method: "GET",
+            credentials: "same-origin",
+        })
+        .then(response => {
+            if (response.ok) {
+                loggedInCallback(response)
+            }
+            else {
+                notLoggedInCallback(response)
+            }
+        })
+        .catch(error => {loginCheckErrorCallback(error)})
 }
 
 export default authCheck;
